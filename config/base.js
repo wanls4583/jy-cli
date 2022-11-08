@@ -23,7 +23,7 @@ config.module
 config.module
 	.rule('rule-css')
 	.test(/\.css$/)
-	.use('style-loader').loader('style-loader').end()
+	.use('vue-style-loader').loader('vue-style-loader').end()
 	.use('css-loader').loader('css-loader').end()
 
 config.module.rule('rule-img')

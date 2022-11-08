@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const Webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const webpackConfig = require('../config/serve.js');
@@ -14,4 +12,4 @@ const runServer = async () => {
 	await server.start();
 };
 
-runServer();
+module.exports = runServer;

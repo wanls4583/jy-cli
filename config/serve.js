@@ -1,6 +1,7 @@
 const baseConifg = require('./base.js');
 
 baseConifg.mode('development');
+baseConifg.devtool('cheap-module-source-map');
 
 baseConifg.output
 	.filename('[name]-[hash:10].bundle.js')
