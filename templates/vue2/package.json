@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@jy/cli-service": "^0.0.1",
+	"vue-loader": "^15.10.0",
 	"vue-template-compiler": "^2.6.14"
   },
   "browserslist": [

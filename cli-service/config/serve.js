@@ -4,8 +4,8 @@ baseConifg.mode('development');
 baseConifg.devtool('cheap-module-source-map');
 
 baseConifg.output
-	.filename('[name]-[hash:10].bundle.js')
-	.chunkFilename('[name]-[hash:10].chunk.js')
+	.filename('[name]-[fullhash:10].bundle.js')
+	.chunkFilename('[name]-[fullhash:10].chunk.js')
 	.end();
 
 baseConifg.devServer

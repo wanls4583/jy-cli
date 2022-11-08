@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-const serve = require('../commands/serve.js');
-const build = require('../commands/build.js');
 const {
 	Command
 } = require('commander');
@@ -15,13 +13,13 @@ program
 program.command('serve')
 	.description('start webpack-dev-serve')
 	.action(() => {
-		serve();
+		require('../commands/serve.js')();
 	});
 
 program.command('build')
 	.description('build project')
 	.action(() => {
-		build();
+		require('../commands/build.js')();
 	});
 	
 program.parse();

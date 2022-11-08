@@ -1,6 +1,6 @@
 const Config = require('webpack-chain');
 const path = require('path');
-const Webpack = require('webpack');
+const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader').VueLoaderPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -46,13 +46,22 @@ config.plugin('CopyWebpackPlugin').use(CopyWebpackPlugin, [{
 	}]
 }]).end();
 
+config.plugin('DefinePlugin').use(webpack.DefinePlugin, [{
+	__VUE_OPTIONS_API: true,
+	__VUE_PROD_DEVTOOLS: false
+}]).end();
+
 config.plugin('HtmlWebpackPlugin').use(HtmlWebpackPlugin, [{
+	title: '广东钜元营养科技',
+	templateParameters: {
+		BASE_URL: `./`
+	},
 	template: path.resolve(__dirname, 'public/index.html'),
 	filename: 'index.html',
 	chunks: ['main']
 }]).end();
 
-config.plugin('ProvidePlugin').use(Webpack.ProvidePlugin, [{
+config.plugin('ProvidePlugin').use(webpack.ProvidePlugin, [{
 	$: 'jquery',
 	jQuery: 'jquery',
 }]).end();
