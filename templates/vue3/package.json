@@ -1,0 +1,21 @@
+{
+  "name": "{{{title}}}>",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "jy-cli-service serve",
+    "build": "jy-cli-service build",
+  },
+  "dependencies": {
+    "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "@jy/cli-service": "^0.0.1",
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
