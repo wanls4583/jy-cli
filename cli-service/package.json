@@ -1,5 +1,5 @@
 {
-  "name": "jy-cli",
+  "name": "@jy/cli-service",
   "bin": {
     "jy-cli-service": "bin/cli-service.js"
   },
