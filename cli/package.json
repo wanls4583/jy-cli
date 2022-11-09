@@ -1,0 +1,14 @@
+{
+   "bin": {
+      "jy-cli": "index.js"
+   },
+   "devDependencies": {
+      "commander": "^9.4.1",
+      "download-git-repo": "^3.0.2",
+      "elegant-spinner": "^1.0.1",
+      "inquirer": "^8.2.5",
+      "log-symbols": "^4.1.0",
+      "ora": "^5.4.1",
+      "replace-in-file": "^6.3.5"
+   }
+}
