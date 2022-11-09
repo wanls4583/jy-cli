@@ -1,4 +1,6 @@
 {
+   "name": "@jy/cli",
+   "version": "0.0.1",
    "bin": {
       "jy-cli": "index.js"
    },
