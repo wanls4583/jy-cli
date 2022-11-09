@@ -6,7 +6,7 @@ const {
 const program = new Command();
 const path = require('path');
 const chalk = require('chalk');
-const symbols = require('log-symbols');
+const logSymbols = require('log-symbols');
 const inquirer = require('inquirer');
 const ora = require('ora');
 const download = require('download-git-repo');
@@ -55,8 +55,8 @@ program.command('create')
 							stdio: 'inherit'
 						});
 						console.log(logSymbols.success, 'Finished successfully!');
-						console.log(chalk.green(`1、cd ${projectName}`));
-						console.log(chalk.green(`2、npm run serve`));
+						console.log(chalk.green(`1.cd ${projectName}`));
+						console.log(chalk.green(`2.npm run serve`));
 					});
 				})
 				.catch((error) => {
