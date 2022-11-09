@@ -1,5 +1,5 @@
 {
-  "name": "@jy/cli-service",
+  "name": "@gdjy/cli-service",
   "version": "0.0.1",
   "bin": {
     "jy-cli-service": "bin/cli-service.js"
@@ -17,5 +17,8 @@
     "webpack": "^5.74.0",
     "webpack-chain": "^6.5.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,5 +1,5 @@
 {
-   "name": "@jy/cli",
+   "name": "@gdjy/cli",
    "version": "0.0.1",
    "bin": {
       "jy-cli": "index.js"
@@ -11,5 +11,8 @@
       "log-symbols": "^4.1.0",
       "ora": "^5.4.1",
       "replace-in-file": "^6.3.5"
+   },
+   "publishConfig": {
+    "access": "public"
    }
 }
