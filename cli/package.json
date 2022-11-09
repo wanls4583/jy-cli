@@ -1,10 +1,10 @@
 {
    "name": "@gdjy/cli",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "bin": {
       "jy-cli": "index.js"
    },
-   "devDependencies": {
+   "dependencies": {
       "commander": "^9.4.1",
       "download-git-repo": "^3.0.2",
       "inquirer": "^8.2.5",
