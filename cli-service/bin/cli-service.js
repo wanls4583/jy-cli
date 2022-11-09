@@ -11,13 +11,13 @@ program
 	.version('0.0.1');
 
 program.command('serve')
-	.description('start webpack-dev-serve')
+	.description('Start webpack-dev-serve')
 	.action(() => {
 		require('../commands/serve.js')();
 	});
 
 program.command('build')
-	.description('build project')
+	.description('Build project')
 	.action(() => {
 		require('../commands/build.js')();
 	});
